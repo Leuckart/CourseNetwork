@@ -60,7 +60,7 @@ struct arphdr
     unsigned short int ar_op;		/* ARP opcode (command).  */
 #if 0
     /* Ethernet looks like this : This bit is variable sized
-       however...  */
+       however...  *///OP指示当前包是请求包还是应答包，对应的值分别是0x0001和0x0002。
     unsigned char __ar_sha[ETH_ALEN];	/* Sender hardware address.  */
     unsigned char __ar_sip[4];		/* Sender IP address.  */
     unsigned char __ar_tha[ETH_ALEN];	/* Target hardware address.  */
